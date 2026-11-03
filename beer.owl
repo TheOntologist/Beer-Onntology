@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/beer#"
+     xml:base="http://www.semanticweb.org/ontologies/beer"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:beer="http://www.semanticweb.org/ontologies/beer#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/beer">
+        <rdfs:label>Beer Ontology</rdfs:label>
+        <rdfs:comment>types of beer</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class10">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beer Ingredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class11 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class11">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hops</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class12">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barley</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class13 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class13">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wheat</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class14 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class14">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class15 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class15">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class16 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class16">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class17 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class17">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brewing Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class18 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class18">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top Fermenting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class19">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottom Fermenting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lager</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">India Pale Ale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class5">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class6">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bitter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mild</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class8">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small Beer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class9">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wheat Beer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class1"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1787) http://owlapi.sourceforge.net -->
+
