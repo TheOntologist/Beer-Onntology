@@ -38,6 +38,41 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#ObjectProperty1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/beer#ObjectProperty1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#ObjectProperty2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/beer#ObjectProperty2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#ObjectProperty3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/beer#ObjectProperty3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">originates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -50,6 +85,146 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class1">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beer</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class68"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class21"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class30"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class21"/>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                                                                                <owl:someValuesFrom>
+                                                                                    <owl:Class>
+                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class27"/>
+                                                                                            <owl:Restriction>
+                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                                                                                                <owl:someValuesFrom>
+                                                                                                    <owl:Class>
+                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class22"/>
+                                                                                                            <owl:Restriction>
+                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                                                                                                                <owl:someValuesFrom>
+                                                                                                                    <owl:Class>
+                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#and"/>
+                                                                                                                            <owl:Restriction>
+                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                                                                                                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class16"/>
+                                                                                                                            </owl:Restriction>
+                                                                                                                            <owl:Restriction>
+                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                                                                                                                                <owl:someValuesFrom>
+                                                                                                                                    <owl:Class>
+                                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class28"/>
+                                                                                                                                            <owl:Restriction>
+                                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                                                                                                                                                <owl:someValuesFrom>
+                                                                                                                                                    <owl:Class>
+                                                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class29"/>
+                                                                                                                                                            <owl:Restriction>
+                                                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                                                                                                                                                                <owl:someValuesFrom>
+                                                                                                                                                                    <owl:Class>
+                                                                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class70"/>
+                                                                                                                                                                            <owl:Restriction>
+                                                                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                                                                                                                                                                                <owl:someValuesFrom>
+                                                                                                                                                                                    <owl:Class>
+                                                                                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class14"/>
+                                                                                                                                                                                            <owl:Restriction>
+                                                                                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                                                                                                                                                                                                <owl:someValuesFrom>
+                                                                                                                                                                                                    <owl:Class>
+                                                                                                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class20"/>
+                                                                                                                                                                                                            <owl:Restriction>
+                                                                                                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                                                                                                                                                                                                                <owl:someValuesFrom>
+                                                                                                                                                                                                                    <owl:Class>
+                                                                                                                                                                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                                                                                                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class23"/>
+                                                                                                                                                                                                                            <owl:Restriction>
+                                                                                                                                                                                                                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                                                                                                                                                                                                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class12"/>
+                                                                                                                                                                                                                            </owl:Restriction>
+                                                                                                                                                                                                                        </owl:intersectionOf>
+                                                                                                                                                                                                                    </owl:Class>
+                                                                                                                                                                                                                </owl:someValuesFrom>
+                                                                                                                                                                                                            </owl:Restriction>
+                                                                                                                                                                                                        </owl:intersectionOf>
+                                                                                                                                                                                                    </owl:Class>
+                                                                                                                                                                                                </owl:someValuesFrom>
+                                                                                                                                                                                            </owl:Restriction>
+                                                                                                                                                                                        </owl:intersectionOf>
+                                                                                                                                                                                    </owl:Class>
+                                                                                                                                                                                </owl:someValuesFrom>
+                                                                                                                                                                            </owl:Restriction>
+                                                                                                                                                                        </owl:intersectionOf>
+                                                                                                                                                                    </owl:Class>
+                                                                                                                                                                </owl:someValuesFrom>
+                                                                                                                                                            </owl:Restriction>
+                                                                                                                                                        </owl:intersectionOf>
+                                                                                                                                                    </owl:Class>
+                                                                                                                                                </owl:someValuesFrom>
+                                                                                                                                            </owl:Restriction>
+                                                                                                                                        </owl:intersectionOf>
+                                                                                                                                    </owl:Class>
+                                                                                                                                </owl:someValuesFrom>
+                                                                                                                            </owl:Restriction>
+                                                                                                                        </owl:intersectionOf>
+                                                                                                                    </owl:Class>
+                                                                                                                </owl:someValuesFrom>
+                                                                                                            </owl:Restriction>
+                                                                                                        </owl:intersectionOf>
+                                                                                                    </owl:Class>
+                                                                                                </owl:someValuesFrom>
+                                                                                            </owl:Restriction>
+                                                                                        </owl:intersectionOf>
+                                                                                    </owl:Class>
+                                                                                </owl:someValuesFrom>
+                                                                            </owl:Restriction>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -75,7 +250,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class12">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barley</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class69"/>
     </owl:Class>
     
 
@@ -84,7 +259,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class13">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wheat</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class69"/>
     </owl:Class>
     
 
@@ -92,7 +267,8 @@
     <!-- http://www.semanticweb.org/ontologies/beer#Class14 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class14">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yeast</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roasting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
     </owl:Class>
     
 
@@ -126,8 +302,14 @@
     <!-- http://www.semanticweb.org/ontologies/beer#Class18 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class18">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top Fermenting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top Fermenting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class68"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class61"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -136,7 +318,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class19">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bottom Fermenting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class68"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class60"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -146,6 +334,102 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class2">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ale</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class18"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class20 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class20">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malted Barley</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class21 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class21">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wort</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class22 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class22">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mash</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class23 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class23">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class24 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class24">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fermentation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class25 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class25">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sugar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class26 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class26">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethanol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class27 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class27">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lautering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class28 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class28">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class29 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class29">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
     </owl:Class>
     
 
@@ -155,6 +439,102 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class3">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lager</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class19"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class30 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class30">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boiling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class31 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class31">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conditioning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class32 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class32">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pale Ale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class33 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class33">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown Ale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class34 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class34">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class35 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class35">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scotch Ale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class36 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class36">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Summer Ale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class37 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class37">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milk Stout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class38 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class38">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imperial Stout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class39 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class39">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oatmeal Stout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
     </owl:Class>
     
 
@@ -163,7 +543,98 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class4">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">India Pale Ale</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class40 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class40">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose Stout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class41 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class41">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oyster Stout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class42 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class42">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chocolate Stout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class43 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class43">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class44 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class44">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Base Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+        <rdfs:comment>Light Malt</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class45 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class45">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pilsner Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class46 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class46">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pale Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class47 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class47">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mild Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class48 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class48">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amber Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class49 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class49">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stout Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
     </owl:Class>
     
 
@@ -177,11 +648,214 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/beer#Class50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class50">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chocolate Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class51 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class51">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class52 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class52">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class53 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class53">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crystal Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class54 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class54">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vienna Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class55 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class55">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Munich Malt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class56 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class56">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light Ale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class57 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class57">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pale Lager</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class58 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class58">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amber Lager</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class59 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class59">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dark Lager</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class3"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/beer#Class6 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class6">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bitter</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class60 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class60">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saccharomyces pastorianus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class15"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class61 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class61">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saccharomyces cerevisiae</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class15"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class62 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class62">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weißbier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class9"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty3"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/beer#Individual2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class63 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class63">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Witbier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class64 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class64">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class65 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class65">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pilsner</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class57"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty3"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/beer#Individual4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class66 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class66">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helles</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class57"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty3"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/beer#Individual2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class67 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class67">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dortmunder Export</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class57"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty3"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/beer#Individual2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class68 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class68">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fermenting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class69 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class69">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
     </owl:Class>
     
 
@@ -189,8 +863,17 @@
     <!-- http://www.semanticweb.org/ontologies/beer#Class7 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class7">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mild</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mild Ale</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class2"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class70 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class70">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roasted Malted Barley</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
     </owl:Class>
     
 
@@ -208,7 +891,84 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class9">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wheat Beer</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class1"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class18"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#and -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#and">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mashing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Individual1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/beer#Individual1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Individual2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/beer#Individual2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/beer#Class64"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Germany</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Individual3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/beer#Individual3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/beer#Class64"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Belgium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Individual4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/beer#Individual4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/beer#Class64"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Czechia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class9"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty3"/>
+        <owl:hasValue rdf:resource="http://www.semanticweb.org/ontologies/beer#Individual3"/>
+    </owl:Restriction>
 </rdf:RDF>
 
 
