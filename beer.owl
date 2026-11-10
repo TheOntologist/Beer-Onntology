@@ -70,6 +70,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/beer#ObjectProperty4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/beer#ObjectProperty4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#ObjectProperty5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/beer#ObjectProperty5">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -337,7 +353,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class18"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class71"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -442,7 +458,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty1"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class19"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class72"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -517,6 +533,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class37">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milk Stout</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class76"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -526,6 +548,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class38">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imperial Stout</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+        <rdfs:comment>higher ABV</rdfs:comment>
     </owl:Class>
     
 
@@ -535,6 +558,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class39">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oatmeal Stout</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class77"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -562,6 +591,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class41">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oyster Stout</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class79"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -571,6 +606,18 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class42">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chocolate Stout</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class80"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class50"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -878,10 +925,221 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/beer#Class71 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class71">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ale Brewing Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty4"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class18"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class72 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class72">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lager Brewing Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class17"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty4"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class19"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class73 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class73">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown Ale Brewing Process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class71"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/beer#Class11"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty5"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class74"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class51"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class74 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class74">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class82"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class75 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class75">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stout Brewing Method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class71"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/beer#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class52"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class76 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class76">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lactose</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class77 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class77">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oatmeal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class78 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class78">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irish Stout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class5"/>
+        <rdfs:comment>Dry Stoout - less sweeet than Milk Stout etc</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class79 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class79">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oyster</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/beer#Class8 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class8">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small Beer</rdfs:label>
+        <rdfs:comment>v low ABV</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class80 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class80">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cacao Nib</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class10"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class81 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class81">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class82"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class82 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class82">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beer Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class83 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class83">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beer Flavour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class82"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class84 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class84">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caramel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class83"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class85 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class85">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class83"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class86 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class86">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bitter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class87 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class87">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bitter Flavour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class83"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class88 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class88">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutty</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class83"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class89 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class89">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citrous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class83"/>
     </owl:Class>
     
 
@@ -897,6 +1155,33 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/beer#Class18"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class90 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class90">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fruity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class83"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class91 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class91">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chocolate Flavour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class83"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/beer#Class92 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/beer#Class92">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malty Flavour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/beer#Class83"/>
     </owl:Class>
     
 
@@ -924,6 +1209,7 @@
     <!-- http://www.semanticweb.org/ontologies/beer#Individual1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/beer#Individual1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/beer#Class64"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</rdfs:label>
     </owl:NamedIndividual>
     
